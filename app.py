@@ -107,7 +107,7 @@ def delete_message(message_id):
     if message is None:
         return jsonify({"error": "聊天记录不存在"}), 404
 
-    messages.remove(message)
+    # Lab5 失败实验：暂时跳过移除记录。
     return jsonify({"id": message_id, "message": "删除成功"})
 
 
